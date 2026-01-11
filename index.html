@@ -37,3 +37,83 @@
             color: var(--primary-color);
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .spam-alert {
+            font-size: 0.9rem;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        .links {
+            margin-top: 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background-color: #0077b5;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e5e7eb;
+            margin: 1.5rem 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Merci pour l'abonnement !</h1>
+        
+        <p>Vous recevrez la newsletter dans vos mails <strong>1 fois par semaine</strong>.</p>
+        
+        <p class="spam-alert">Pensez à vérifier vos spams, cela arrive parfois.</p>
+        
+        <hr>
+
+        <div class="links">
+            <a href="https://test-five-azure-71.vercel.app/" class="btn btn-primary">
+                Voir toutes les anciennes éditions
+            </a>
+            
+            <a href="https://www.linkedin.com/in/maceo-pauron-56a6052b0/" target="_blank" class="btn btn-secondary">
+                Me suivre sur LinkedIn
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
